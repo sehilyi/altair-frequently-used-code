@@ -23,6 +23,11 @@ Filter by str contains:
 df[df['A'].str.contains("hello")]
 ```
 
+Concat strings in two columns:
+```py
+df['siteid-phase'] = df.siteid + df.phase.astype(str)
+```
+
 ## Altair
 
 Channel:
