@@ -12,3 +12,8 @@ Sort by value:
 ```py
 df = df.sort_values(by=['siteid'])
 ```
+
+Append vertical:
+```py
+meta.append(nometa)
+```
