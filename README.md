@@ -35,3 +35,12 @@ text = points.mark_text(
     text='label'
 )
 ```
+
+Filters:
+```py
+.transform_calculate(
+    order="{'Low Risk':0, 'Medium Risk': 1, 'High Risk': 2}[datum.variable]"  
+).transform_filter(
+    {'field': 'metric', 'oneOf': [metric]}
+)
+```
