@@ -24,3 +24,14 @@ Channel:
 ```py
 alt.X("day:Q", title=None, bin=alt.Bin(maxbins=20), axis=alt.Axis(labelAngle=0, tickCount=3), scale=alt.Scale(clamp=True)),
 ```
+
+Text:
+```py
+text = points.mark_text(
+    align='left',
+    baseline='middle',
+    dx=7
+).encode(
+    text='label'
+)
+```
