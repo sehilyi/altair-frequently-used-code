@@ -41,6 +41,11 @@ text = points.mark_text(
 )
 ```
 
+Colors:
+```py
+color=alt.Color('symbol', scale=alt.Scale(scheme='category20')),
+```
+
 Filters:
 ```py
 .transform_calculate(
