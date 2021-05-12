@@ -18,6 +18,11 @@ Append vertical:
 meta.append(nometa)
 ```
 
+Filter by str contains:
+```py
+df[df['A'].str.contains("hello")]
+```
+
 ## Altair
 
 Channel:
