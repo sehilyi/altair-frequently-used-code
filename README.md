@@ -28,6 +28,11 @@ Concat strings in two columns:
 df['siteid-phase'] = df.siteid + df.phase.astype(str)
 ```
 
+Two columns to dict:
+```py
+pd.Series(df.Letter.values,index=df.Position).to_dict()
+```
+
 ## Altair
 
 Channel:
