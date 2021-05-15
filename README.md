@@ -64,3 +64,8 @@ Filters:
     {'field': 'metric', 'oneOf': [metric]}
 )
 ```
+
+Use multi-line axis title:
+```py
+y=alt.Y('mean:Q', scale=alt.Scale(zero=False), title=['All Patients' if patient_group == 'all' else "Ever Severe Patients", 'Mean Lab Value'] if i == 0 else None, axis=alt.Axis(titleX=titleX)),
+```
