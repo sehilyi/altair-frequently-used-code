@@ -18,6 +18,11 @@ Append vertical:
 meta.append(nometa)
 ```
 
+Filter by null checking:
+```py
+pd.isnull(df.var2)
+```
+
 Filter by str contains:
 ```py
 df[df['A'].str.contains("hello")]
