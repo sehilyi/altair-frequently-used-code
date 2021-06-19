@@ -18,6 +18,11 @@ Append vertical:
 meta.append(nometa)
 ```
 
+Append custome data rows:
+```py
+d = d.append({'x': 0, 'y': None, 'lab': lab, 'siteid': 'META_GERMANY', 'day': 'day1', 'period': 'early'}, ignore_index=True)
+```
+
 Filter by null checking:
 ```py
 pd.isnull(df.var2)
