@@ -66,6 +66,24 @@ Axis offset:
 axis=alt.Axis(titleX=-40)
 ```
 
+Bar offset:
+```py
+mark_bar(xOffset=-10)
+```
+
+Alternative error bars (`mark_errorbar`):
+```py
+mark_bar(
+    size=1,
+    color='black',
+    xOffset=-10
+).encoding(
+    x=alt.X(...),
+    y=alt.Y(...),
+    y2=alt.Y(...),
+)
+```
+
 Colors:
 ```py
 color=alt.Color('symbol', scale=alt.Scale(scheme='category20')),
