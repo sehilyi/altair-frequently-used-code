@@ -1,4 +1,4 @@
-# 4ce-frequently-used-codes
+# altair-frequently-used-codes
 This repository contains python codes that I have been using frequently for 4CE projects. The purpose of this repository is for my convenience :)
 
 ## Pandas
